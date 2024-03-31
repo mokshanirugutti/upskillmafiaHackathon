@@ -9,7 +9,7 @@ body{
     justify-content: center;
     min-height: 100vh;
     width: 100%;
-    background:url("https://imgs.search.brave.com/nhDizHNGc5q-bgrcxRQWu2cu8EIrEHKQxG9Bp6YLkGg/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9idXJz/dC5zaG9waWZ5Y2Ru/LmNvbS9waG90b3Mv/aWNlLWNyYWNrcy1v/bi1hLWZyb3plbi1z/ZWEuanBnP3dpZHRo/PTEwMDAmZm9ybWF0/PXBqcGcmZXhpZj0w/JmlwdGM9MA");
+    background:url("./bgss.jpeg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
@@ -83,7 +83,6 @@ h2{
     cursor:pointer;
 }
 button{
-    border-radius: 20px;
     background:rgba(255,255,255,0.6);
     margin-left: 10px;
     margin-right: 10px;
@@ -94,5 +93,8 @@ button{
 }
 button:hover{
     border:2px solid #fff;
-    color:#fff;
+    border-radius: 20px;
+    color: white;
+    background:rgba(0,0,0,0.4);
+
 }
