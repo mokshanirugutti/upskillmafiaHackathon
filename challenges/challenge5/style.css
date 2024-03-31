@@ -19,9 +19,9 @@ body{
   position: relative;
   overflow: hidden;
   background-color: #cc0;
-  background: radial-gradient(ellipse at center, #cc0 0%, darken(#cc0, 15) 100%);;
+  background: radial-gradient(ellipse at center, #cc0 0%, darken(#cc0, 15) 100%);
   box-sizing: border-box;
-  transform: translate(-50%, -50%) rotate(30deg);
+  transform: translate(-50%, -50%);
   box-shadow: 10px 20px 25px 10px rgba(#000, .2);
 
   animation-name: example;
@@ -51,9 +51,9 @@ body{
 
 }
 @keyframes example {
-  0%   {left:-100px;}
-  25%  { left:200px;}
-  50%  { left:200px;}
-  75%  { left:-100px;}
-  100% { left:-100px;}
+  0%   { transform: translateX(-100px) rotate(0deg);}
+  25%  { transform: translateX(200px) rotate(360deg);}
+  50%  { transform: translateX(200px) rotate(360deg);}
+  75%  { transform: translateX(-100px) rotate(0deg);}
+  100% { transform: translateX(-100px) rotate(0deg);}
 }
