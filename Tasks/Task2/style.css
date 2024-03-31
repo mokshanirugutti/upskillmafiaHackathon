@@ -1,0 +1,22 @@
+body {
+    background-color: orange;
+  }
+  .head {
+    color: darkblue;
+  }
+  #bglime {
+    background-color: lime;
+    color: red;
+  }
+  p {
+    color: white;
+  }
+  #para {
+    color: black;
+    font-size: 1.2em; 
+  }
+    
+  li:first-child {
+    color: blue; /* Assuming "here" refers to the first list item */
+  }
+  

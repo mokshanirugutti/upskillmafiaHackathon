@@ -1,0 +1,138 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+      background: #333;
+      color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  header h3 {
+    margin: 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .about, .services, .prices, .booking {
+    background: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    max-width: 800px;
+  }
+  .about{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+  }
+  .about p, .services ul, .prices table, .booking form {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .services h3, .prices h2, .booking h3 {
+    border-bottom: 1px solid #e1e1e1;
+    padding-bottom: 10px;
+  }
+  
+  .services ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .services ul li {
+    padding: 5px 0;
+    position: relative;
+    padding-left: 20px;
+  }
+  
+  .services ul li:before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #333;
+  }
+  
+  .prices table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .prices th, .prices td {
+    padding: 10px;
+    border: 1px solid #e1e1e1;
+  }
+  
+  .prices th {
+    background: #333;
+    color: #fff;
+  }
+  
+  .booking form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .booking label {
+    margin-bottom: 5px;
+  }
+  
+  .booking input[type="text"],
+  .booking input[type="email"],
+  .booking input[type="tel"] {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #e1e1e1;
+    border-radius: 5px;
+  }
+  
+  .booking input[type="submit"] {
+    background: #333;
+    color: #fff;
+    border: 0;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+  }
+  
+  img {
+    display: block;
+    max-width: 100%;
+    height: 300px;
+    margin: 20px auto;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      padding: 10px;
+    }
+    
+    .about, .services, .prices, .booking {
+      margin: 10px auto;
+    }
+  }
+  

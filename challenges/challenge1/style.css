@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: linear-gradient(100deg,#F67340,white);
+    overflow-x: hidden;
+}
+.nav{
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    
+}
+a {   
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+
+}
+#main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.hero{
+    width: 50%;
+    height: 60vh;
+    padding: 100px 0px 0px 180px;
+}
+
+.hero>h1{
+    width: 60%;
+    font-size: 50px;
+    padding-right: 50px;
+    color: white;
+}
+.hero>p{
+    width: 60%;
+    line-height: 1.5rem;
+    padding: 10px 0;
+}
+button {
+    height: 40px;
+    background-color: #333;
+    color: white;
+    border-radius: 20px;
+    padding: 10px;
+}
+.square{
+    margin-left: 100px;
+    background-color: white;
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+    transform: rotate(45deg);
+}
+img{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    border: 2px solid white;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+#navb{
+    z-index: 1;
+}
