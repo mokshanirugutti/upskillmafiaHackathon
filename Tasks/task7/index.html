@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 7</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <ul class="sidebar">
+      <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Contact Us</a></li>
+    </ul>
+    <ul>
+      <li><a href="#" id ="logo">LOGO</a></li>
+      <div class="nav-items">
+        <h3 id="username">username</h3>
+        <li class="hideOnMobile"><a href="#">Home</a></li>
+        <li class="hideOnMobile"><a href="#">Services</a></li>
+        <li class="hideOnMobile"><a href="#">About Us</a></li>
+        <li class="hideOnMobile"><a href="#">Contact Us</a></li>
+        <li class="menu-button" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+      </div>
+    </ul>
+  </nav>
+  <div class="main">
+    <div id="Leftdiv">
+        <h1>Revitalize Your Clothes With Expert</h1>
+        <h1 id="it">Laundry Services!</h1>
+        <p>From premium dry cleaning to swift wash and fold,we deliver care and convenience.Schedule a pickup and rediscover freshness of your clothes today!</p>
+    
+        <button>Book a Service Today</button>
+    </div>
+    <div id="Rightdiv"><img src="./img.png" alt=""></div>
+</div>
+
+
+  <script>
+    function showSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'flex'
+    }
+    function hideSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'none'
+    }
+  </script>
+</body>
+</html>

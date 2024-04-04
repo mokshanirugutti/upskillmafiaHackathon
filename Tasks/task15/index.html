@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="heading">
+      <h2 id="greeting">Hello</h2>
+    </div>
+    <div class="grid_boxes">
+      <div class="grids" id="red" onclick="toggleColor(this, 'red')">Red</div>
+      <div class="grids" id="blue" onclick="toggleColor(this, 'blue')">
+        Blue
+      </div>
+      <div class="grids" id="green" onclick="toggleColor(this, 'green')">
+        Green
+      </div>
+      <div class="grids" id="yellow" onclick="toggleColor(this, 'yellow')">
+        Yellow
+      </div>
+    </div>
+    <div id="name">
+      <input type="text" id="in" placeholder="Enter Name" />
+      <button onclick="nameOperation()">Greet</button>
+    </div>
+
+    <br />
+    <div id="results"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

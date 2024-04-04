@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    display: block;
+    text-align: center;
+    place-content: center;
+    
+}
+h1{
+    font-size: 250px;
+    color: black;
+    outline: 1px;
+    
+}
+h1:hover{
+    background-image: url('./forest2.jpg');
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.colorChange {
+    height: 2800px;
+    background-color: black;
+    transition: background-color 0.5s;
+  }
+  
+  #block {
+    background-color: black;
+    width: 1px;
+    height: 1px;
+    margin-top: 1300px;
+    display: inline-block;
+  }
