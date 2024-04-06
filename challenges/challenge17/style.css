@@ -1,0 +1,30 @@
+body{
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #333;
+    
+}
+
+.wrapper{
+    max-height: 250px;
+    display: grid;
+    grid-auto-flow: column;
+    gap:10px;
+    grid-auto-columns: 30%;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    padding: 0px 10px 50px;
+    
+
+}
+
+.wrapper::-webkit-scrollbar{
+    width: 0;
+}
+.wrapper img{
+    inline-size: 100%;
+    aspect-ratio: 16/9;
+    
+}

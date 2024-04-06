@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stay away</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <style>
+        button {
+            padding: 10px 20px;
+            color: white;
+            background-color: #0050ff;
+            border-radius: 20px;
+            border: none;
+            box-shadow: 2px 2px 5px #333;
+            position: absolute;
+            transition: transform 0.5s ease; 
+        }
+        
+    </style>
+    <button id="moveButton">Click me!</button>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var button = document.getElementById('moveButton');
+        
+            button.addEventListener('mouseover', function () {
+              
+                var viewportWidth = window.innerWidth;
+                var viewportHeight = window.innerHeight;
+        
+              
+                var newPositionX = Math.random() * (viewportWidth - this.offsetWidth);
+                var newPositionY = Math.random() * (viewportHeight - this.offsetHeight);
+        
+              
+                this.style.transform = 'translate(' + newPositionX + 'px, ' + newPositionY + 'px)';
+            });
+        });
+        
+    </script>
+    
+</body>
+</html>
